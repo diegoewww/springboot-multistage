@@ -1,0 +1,16 @@
+# modify the default port on which Jetty listens for requests
+server:
+  port: 8080
+
+  # modify the default context path
+  servlet:
+    context-path: /
+ 
+  # Number of acceptor threads to use.
+  jetty.acceptors: -1
+ 
+  # Maximum size in bytes of the HTTP post or put content.
+  jetty.max-http-post-size: 1000000
+ 
+  # Number of selector threads to use.
+  jetty.selectors: -1

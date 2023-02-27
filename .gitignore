@@ -1,0 +1,5 @@
+target/
+build/
+.gradle/
+release.properties
+.scannerwork/
