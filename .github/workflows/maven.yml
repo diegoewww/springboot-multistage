@@ -20,14 +20,13 @@ jobs:
         java-version: '1.8'
         distribution: 'adopt'
         cache: maven
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-        files: |
-      test-results/**/*.xml
-      test-results/**/*.trx
-
+    # - name: Publish Test Results
+    #   uses: EnricoMi/publish-unit-test-result-action@v2
+    #   if: always()
+    #   with:
+    #     files: |
+    #   test-results/**/*.xml
+    #   test-results/**/*.trx
     - name: Cache local Maven repository
       uses: actions/cache@v3
       with:
